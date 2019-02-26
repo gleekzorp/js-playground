@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body>
+  <h1 id="changeMe">Look at this text</h1>
+  <button onclick="changeBigAndBlack()">Make me BIG and Blaxk</button>
+  <button onclick="changeSmallAndBlack()">Make me Small and Black</button>
+  <button onclick="document.getElementById('changeMe').style.color='red'">Change to RED</button>
+  <button onclick="document.getElementById('changeMe').style.color='green'">Change to GREEN</button>
+</body>
+
+<script>
+function changeSmallAndBlack() {
+  document.getElementById('changeMe').style.color='black'
+  document.getElementById('changeMe').style.fontSize='2em'
+}
+
+function changeBigAndBlack() {
+  document.getElementById('changeMe').style.color='black'
+  document.getElementById('changeMe').style.fontSize='100px'
+}
+
+</script>
+</html>
