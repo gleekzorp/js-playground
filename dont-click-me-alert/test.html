@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body>
+    <button id="changeDisplay" onclick="fastAlert()" onmouseover="changeDisplay()">Click Me</button>
+    <div>Do you think you can catch the button?</div>
+    <button onclick="document.getElementById('changeDisplay').style.display='block'">COME BACK</button>
+</body>
+<script>
+    function changeDisplay() {
+        document.getElementById('changeDisplay').style.display='none';
+    }
+
+    function fastAlert() {
+        window.alert('wow you are fast!');
+    }
+</script>
+</html>
