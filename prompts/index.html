@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body>
+    <h1>What is your name?</h1>
+    <button onclick="giveMeName()">Please Tell Me Your Name</button>
+    <button onclick="reset()">Reset</button>
+    <h1 id="name"></h1>
+</body>
+
+<script>
+    function giveMeName() {
+        var name = prompt('Please Enter Your Name')
+        document.getElementById('name').style.display='block'
+        document.getElementById('name').innerHTML = `Hello ${name}`
+    }
+
+    function reset() {
+        document.getElementById('name').style.display='none'
+    }
+</script>
+</html>
