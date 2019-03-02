@@ -1,0 +1,13 @@
+.total {
+    background-color: bisque;
+    border: solid black 1px;
+}
+
+.calculator-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.total {
+    height: 25px;
+}

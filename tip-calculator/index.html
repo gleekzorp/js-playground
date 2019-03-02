@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body>
+    <!-- Grid -->
+    <div class="tip-calculator-wrapper">
+        <!-- Flex -->
+        <div class="subtotal-wrapper">
+            <div class="subtotal">
+                SubTotal
+            </div>
+            <div class="input">
+                <input type="text" id="inputSubTotal">
+            </div>
+        </div>
+        <!-- Flex -->
+        <div class="tip-wrapper">
+            <div class="tip">
+                Tip
+            </div>
+            <div class="input">
+                <input type="text" id="inputTip">
+            </div>
+        </div>
+        <!-- Flex -->
+        <div class="calculate-wrapper">
+            <button class="btn" onclick="tipAmountCalculator()">Calculate Tip</button>
+        </div>
+        <!-- Grid -->
+        <div id="total-wrapper">
+            <!-- Flex -->
+            <div class="tip-total-wrapper">
+                <div class="tip-total">
+                    Tip Total
+                </div>
+                <div id='tip-total-display'></div>
+            </div>
+            <!-- Flex -->
+            <div class="grand-total-wrapper">
+                <div class="grand-total">
+                    Grand Total
+                </div>
+                <div id="grand-total-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="total"></div>
+
+
+
+</body>
+
+<script>
+    // This way has long trailing numbers
+    // function tipAmountCalculator() {
+    //     let subTotalValue = Number(document.getElementById('inputSubTotal').value);
+    //     let tipDecimal = Number('.' + document.getElementById('inputTip').value);
+    //     let tipTotalValue = document.getElementById('tip-total-display').innerHTML = subTotalValue * tipDecimal;
+    //     let grandTotalValue = document.getElementById('grand-total-display').innerHTML = tipTotalValue + subTotalValue;
+    //     document.getElementById('total-wrapper').style.display='grid';
+    // }
+
+    function tipAmountCalculator() {
+        let subTotalValue = Number(document.getElementById('inputSubTotal').value);
+        let tipDecimal = Number('.' + document.getElementById('inputTip').value);
+        
+        let tipTotalValue = subTotalValue * tipDecimal;
+        document.getElementById('tip-total-display').innerHTML = tipTotalValue.toFixed(2);
+        
+        let grandTotalValue = tipTotalValue + subTotalValue;
+        document.getElementById('grand-total-display').innerHTML = grandTotalValue.toFixed(2);
+
+        document.getElementById('total-wrapper').style.display='grid';
+    }
+</script>
+</html>
