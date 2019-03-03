@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background-color: black;
+    color: limegreen;
+    font-size: 2em;
+    /* font-family: 'Indie Flower', cursive; */
+}
+
+/* Display Wrappers */
+.tip-calculator-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+.subtotal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+.tip-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+.calculate-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+#page-border {
+    border: solid limegreen;
+    padding: 0 20px 20px 20px;
+    margin: 10px 20px 20px 20px;
+}
+
+/* Need to change display to none when final */
+#total-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+.tip-total-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+.grand-total-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+}
+
+
+/* Items */
+
+.input {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: .9em;
+    padding: 0;
+    border: solid limegreen;
+    background-color: blue;
+    color: white;
+    margin-left: 25px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: solid limegreen;
+}
+
+.subtotal-input {
+
+}
+
+.tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: solid limegreen;
+}
+
+.tip-input {
+
+}
+
+#btn {
+    width: 240px;
+    height: 60px;
+    background-color: blue;
+    border: solid limegreen;
+    color: limegreen;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.tip-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: solid limegreen;
+}
+
+#tip-total-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: .9em;
+    padding: 0;
+    border: solid limegreen;
+    background-color: blue;
+    color: white;
+    margin-left: 25px;
+}
+
+.grand-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: solid limegreen;
+}
+
+#grand-total-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: .9em;
+    padding: 0;
+    border: solid limegreen;
+    background-color: blue;
+    color: white;
+    margin-left: 25px;
+}
