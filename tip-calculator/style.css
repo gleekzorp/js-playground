@@ -4,8 +4,8 @@ body {
     background-color: black;
     color: limegreen;
     font-size: 2em;
-    /* font-family: 'Indie Flower', cursive; */
 }
+
 
 /* Display Wrappers */
 .tip-calculator-wrapper {
@@ -13,7 +13,7 @@ body {
     justify-content: center;
 }
 
-.page-header {
+.page-header, .subtotal-wrapper, .tip-wrapper, .tip-total-wrapper, .grand-total-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,23 +21,7 @@ body {
     height: 75px;
 }
 
-.subtotal-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 75px;
-}
-
-.tip-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 75px;
-}
-
-.calculate-btn-wrapper {
+#calculate-btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +35,6 @@ body {
     margin: 10px 20px 20px 20px;
 }
 
-/* Need to change display to none when final */
 #total-wrapper {
     display: none;
     justify-content: center;
@@ -60,25 +43,8 @@ body {
     height: 75px;
 }
 
-.tip-total-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 75px;
-}
-
-.grand-total-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 75px;
-}
-
 
 /* Items */
-
 .input {
     width: 150px;
     height: 40px;
@@ -91,7 +57,7 @@ body {
     margin-left: 25px;
 }
 
-.subtotal {
+.tip, .tip-total, .subtotal, .grand-total {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,79 +67,51 @@ body {
     border: solid limegreen;
 }
 
-.subtotal-input {
-
-}
-
-.tip {
+#tip-total-display, #grand-total-display {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 40px;
-    text-align: center;
+    font-size: .9em;
+    padding: 0;
     border: solid limegreen;
-}
-
-.tip-input {
-
-}
-
-#btn {
-    width: 240px;
-    height: 60px;
     background-color: blue;
+    color: white;
+    margin-left: 25px;
+}
+
+
+/* Button Styles */
+.btn-styles {
+    width: 170px;
+    height: 60px;
+    background-color: white;
     border: solid limegreen;
     color: limegreen;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 900;
     font-family: 'VT323', monospace;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
 }
 
-.tip-total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    border: solid limegreen;
+.btn-styles:focus {
+    outline: 0;
 }
 
-#tip-total-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    font-size: .9em;
-    padding: 0;
-    border: solid limegreen;
-    background-color: blue;
+.btn-styles:hover {
+    background-color: limegreen;
     color: white;
-    margin-left: 25px;
 }
 
-.grand-total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    border: solid limegreen;
+.btn-styles:active {
+    background-color: #2f7a1a;
+    transition: 0s;
 }
 
-#grand-total-display {
-    display: flex;
+#btn-reset {
+    display: none;
     justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    font-size: .9em;
-    padding: 0;
-    border: solid limegreen;
-    background-color: blue;
-    color: white;
-    margin-left: 25px;
 }
