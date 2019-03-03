@@ -57,28 +57,5 @@
     </div>
 </body>
 
-<script>
-    // This way has long trailing numbers
-    // function tipAmountCalculator() {
-    //     let subTotalValue = Number(document.getElementById('inputSubTotal').value);
-    //     let tipDecimal = Number('.' + document.getElementById('inputTip').value);
-    //     let tipTotalValue = document.getElementById('tip-total-display').innerHTML = subTotalValue * tipDecimal;
-    //     let grandTotalValue = document.getElementById('grand-total-display').innerHTML = tipTotalValue + subTotalValue;
-    //     document.getElementById('total-wrapper').style.display='grid';
-    // }
-
-    function tipAmountCalculator() {
-        let subTotalValue = Number(document.getElementById('inputSubTotal').value);
-        let tipDecimal = Number('.' + document.getElementById('inputTip').value);
-        
-        let tipTotalValue = subTotalValue * tipDecimal;
-        document.getElementById('tip-total-display').innerHTML = tipTotalValue.toFixed(2);
-        
-        let grandTotalValue = tipTotalValue + subTotalValue;
-        document.getElementById('grand-total-display').innerHTML = grandTotalValue.toFixed(2);
-
-        document.getElementById('total-wrapper').style.display='grid';
-        document.getElementById('page-border').style.padding='0 20px 90px 20px';
-    }
-</script>
+<script src="./script-main.js"></script>
 </html>

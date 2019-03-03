@@ -127,6 +127,7 @@ body {
     color: limegreen;
     font-size: 1em;
     font-weight: 900;
+    font-family: 'VT323', monospace;
 }
 
 .tip-total {
