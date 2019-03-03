@@ -31,8 +31,3 @@ function resetInputs() {
     document.getElementById("inputSubTotal").value = '';
     document.getElementById("inputTip").value = '';
 }
-
-// Possible addition for Tip% input field
-// When the input field gets focus, replace its current value with an empty string
-// onfocus="this.value=''"
-// https://www.w3schools.com/howto/howto_html_clear_input.asp
