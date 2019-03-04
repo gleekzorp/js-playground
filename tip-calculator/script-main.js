@@ -1,7 +1,7 @@
 // Work on making this tipAmmountCalculator less lines
 function tipAmountCalculator() {
     let subTotalValue = Number(document.getElementById('inputSubTotal').value);
-    let tipDecimal = Number('.' + document.getElementById('inputTip').value);
+    let tipDecimal = document.getElementById('inputTip').value / 100;
     
     let tipTotalValue = subTotalValue * tipDecimal;
     document.getElementById('tip-total-display').innerHTML = tipTotalValue.toFixed(2);
