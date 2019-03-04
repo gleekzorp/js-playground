@@ -57,6 +57,10 @@ body {
     margin-left: 25px;
 }
 
+.input:focus {
+    outline: 0;
+}
+
 .tip, .tip-total, .subtotal, .grand-total {
     display: flex;
     justify-content: center;
