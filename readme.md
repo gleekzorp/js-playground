@@ -1,8 +1,6 @@
 #JavaScript Playground
 ---
-This is just a playground for me to test random javascript code that I come across.
+This is just a playground for me to test random javascript code that I come across or built on my own.
 
-Thanks to these websites:
-- [https://www.w3schools.com](https://www.w3schools.com)
-
-- Note to myself.  When you attempt to bring this into React you will need to use state and setState for the resets.
+Links to test out instead of just looking at the code:
+- [https://vigorous-boyd-5b1b6e.netlify.com/](TipCalculator)
