@@ -7,3 +7,6 @@ Links to test out instead of just looking at the code:
 
 Links to resources:
 - [TicTacToe-Tutorial](https://www.youtube.com/watch?v=P2TcQ3h0ipQ)
+
+Simon Game Built with Gmo for our SundayFunday:
+- [SimonGame](https://github.com/gmocore/simon)
